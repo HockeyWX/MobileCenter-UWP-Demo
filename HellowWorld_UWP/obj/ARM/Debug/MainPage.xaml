@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="HellowWorld_UWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HellowWorld_UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Margin="10,30,10,0"
+        Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock Text="Mobile Center Demo" 
+                   Foreground="#FF1261A2" 
+                   Height="60"
+                   VerticalAlignment="Center"/>
+        <Button x:ConnectionId='1' Content="CreateCrash"                     />
+    </StackPanel>
+</Page>
+

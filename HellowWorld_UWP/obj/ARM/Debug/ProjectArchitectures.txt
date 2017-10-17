@@ -1,0 +1,1 @@
+E:\Pan\HockeyApp\VS2017\HellowWorld_UWP\HellowWorld_UWP\HellowWorld_UWP.csproj;arm
