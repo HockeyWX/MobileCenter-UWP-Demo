@@ -13,16 +13,21 @@
                    Foreground="#FF1261A2" 
                    Height="60"
                    VerticalAlignment="Center"/>
-        <Button x:ConnectionId='1' Content="CreateCrash"                     />
+        <Button x:ConnectionId='1' Content="CreateCrash"                          />
 
-        <StackPanel Orientation="Horizontal">
+        <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
             <TextBlock Text="NotificationURI:  "/>
-            <TextBlock x:ConnectionId='3' Name="URITextBlock"/>
+            <TextBlock x:ConnectionId='5' Name="URITextBlock"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal">
             <TextBlock Text="ApplicationStateIsSuspended:  "/>
-            <TextBlock x:ConnectionId='2' Name="ApplicationStateTB"/>
+            <TextBlock x:ConnectionId='4' Name="ApplicationStateTB"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Margin="0,20,0,0">
+            <Button x:ConnectionId='2' Content="CustomEvent"                          />
+            <Button x:ConnectionId='3' Content="EventWithOnlyName"                                />
         </StackPanel>
 
     </StackPanel>

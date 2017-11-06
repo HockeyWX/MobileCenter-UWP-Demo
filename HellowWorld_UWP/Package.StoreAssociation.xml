@@ -404,14 +404,15 @@
     <MainPackageIdentityName>37492msdnwp.MattewTestXbox</MainPackageIdentityName>
     <MainPackageIdentityName>37492msdnwp.MattewWuTest</MainPackageIdentityName>
     <MainPackageIdentityName>37492msdnwp.MRSample</MainPackageIdentityName>
-    <MainPackageIdentityName>37492msdnwp.MRTest1</MainPackageIdentityName>
     <MainPackageIdentityName>37492msdnwp.MusicWarLife</MainPackageIdentityName>
     <MainPackageIdentityName>37492msdnwp.Mytest123</MainPackageIdentityName>
     <MainPackageIdentityName>37492msdnwp.MyTestAPBreeze</MainPackageIdentityName>
     <MainPackageIdentityName>37492msdnwp.Navigate123</MainPackageIdentityName>
     <MainPackageIdentityName>37492msdnwp.NewIAPFeature</MainPackageIdentityName>
+    <MainPackageIdentityName>37492msdnwp.RoyTestRS</MainPackageIdentityName>
     <MainPackageIdentityName>37492msdnwp.RssTest</MainPackageIdentityName>
     <MainPackageIdentityName>37492msdnwp.rtrtr</MainPackageIdentityName>
+    <MainPackageIdentityName>37492msdnwp.SilverlightMattew</MainPackageIdentityName>
     <MainPackageIdentityName>37492msdnwp.SilverlightMattewTest</MainPackageIdentityName>
     <MainPackageIdentityName>37492msdnwp.TestAppcerKit</MainPackageIdentityName>
     <MainPackageIdentityName>37492msdnwp.testAppPackage</MainPackageIdentityName>
@@ -430,7 +431,6 @@
     <MainPackageIdentityName>37492msdnwp.WicresoftLOBAPP</MainPackageIdentityName>
     <MainPackageIdentityName>37492msdnwp.XBLTest</MainPackageIdentityName>
     <MainPackageIdentityName>37492msdnwp.xBOXIAP</MainPackageIdentityName>
-    <MainPackageIdentityName>37492msdnwp.xboxlive1test</MainPackageIdentityName>
   </AccountPackageIdentityNames>
   <PackageInfoList LandingUrl="https://developer.microsoft.com/dashboard/Application?appId=9N9QC2VQ1MNT" />
 </StoreAssociation>

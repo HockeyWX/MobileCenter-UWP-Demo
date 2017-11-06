@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "targets": {
     "UAP,Version=v10.0.10586": {
       "Microsoft.Azure.Mobile/0.16.0": {
@@ -5536,9 +5536,6 @@
       },
       "runtime.win10-arm-aot.runtime.native.System.IO.Compression/4.0.1": {
         "type": "package",
-        "compile": {
-          "runtimes/win10-arm-aot/lib/netcore50/_._": {}
-        },
         "runtime": {
           "runtimes/win10-arm-aot/lib/netcore50/clrcompression.dll": {}
         }
@@ -10507,9 +10504,6 @@
       },
       "runtime.win10-x64-aot.runtime.native.System.IO.Compression/4.0.1": {
         "type": "package",
-        "compile": {
-          "runtimes/win10-x64-aot/lib/netcore50/_._": {}
-        },
         "runtime": {
           "runtimes/win10-x64-aot/lib/netcore50/clrcompression.dll": {}
         }
@@ -15484,9 +15478,6 @@
       },
       "runtime.win10-x86-aot.runtime.native.System.IO.Compression/4.0.1": {
         "type": "package",
-        "compile": {
-          "runtimes/win10-x86-aot/lib/netcore50/_._": {}
-        },
         "runtime": {
           "runtimes/win10-x86-aot/lib/netcore50/clrcompression.dll": {}
         }
@@ -17544,14 +17535,14 @@
       ]
     },
     "Microsoft.NETCore.UniversalWindowsPlatform/5.2.3": {
-      "sha512": "xsOO1wxNtqhPdYoNfI96fTG9xrECOqBmqwVbarRuQinQ+sZKSI604Bi2S2cPHHAogHwbs3Lzgooi5KYffvOlpQ==",
+      "sha512": "j9TvGPvxH42R7hZ4AzhSO7WdWWbDxtw69RbM2YzV2wAOnUf8MHRv3DTRT1oV0amPW779/HLr7YJuRF6QByaOAA==",
       "type": "package",
       "path": "microsoft.netcore.universalwindowsplatform/5.2.3",
       "files": [
-        "Microsoft.NETCore.UniversalWindowsPlatform.5.2.3.nupkg.sha512",
-        "Microsoft.NETCore.UniversalWindowsPlatform.nuspec",
         "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt"
+        "dotnet_library_license.txt",
+        "microsoft.netcore.universalwindowsplatform.5.2.3.nupkg.sha512",
+        "microsoft.netcore.universalwindowsplatform.nuspec"
       ]
     },
     "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
@@ -23748,32 +23739,28 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Pan\\HockeyApp\\VS2017\\HellowWorld_UWP\\HellowWorld_UWP\\HellowWorld_UWP.csproj",
+      "projectUniqueName": "D:\\MobileCenter\\HelloWorld_UWP\\HelloWrold_UWP\\HellowWorld_UWP\\HellowWorld_UWP.csproj",
       "projectName": "HellowWorld_UWP",
-      "projectPath": "E:\\Pan\\HockeyApp\\VS2017\\HellowWorld_UWP\\HellowWorld_UWP\\HellowWorld_UWP.csproj",
-      "outputPath": "E:\\Pan\\HockeyApp\\VS2017\\HellowWorld_UWP\\HellowWorld_UWP\\obj\\",
+      "projectPath": "D:\\MobileCenter\\HelloWorld_UWP\\HelloWrold_UWP\\HellowWorld_UWP\\HellowWorld_UWP.csproj",
+      "packagesPath": "C:\\Users\\v-yepa\\.nuget\\packages\\",
+      "outputPath": "D:\\MobileCenter\\HelloWorld_UWP\\HelloWrold_UWP\\HellowWorld_UWP\\obj\\",
       "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\v-yepa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
       "originalTargetFrameworks": [
         "uap10.0.10586"
       ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {}
         }
-      }
-    },
-    "dependencies": {
-      "Microsoft.Azure.Mobile.Analytics": {
-        "target": "Package",
-        "version": "0.16.0"
-      },
-      "Microsoft.Azure.Mobile.Push": {
-        "target": "Package",
-        "version": "0.16.0"
-      },
-      "Microsoft.NETCore.UniversalWindowsPlatform": {
-        "target": "Package",
-        "version": "5.2.3"
       }
     },
     "frameworks": {

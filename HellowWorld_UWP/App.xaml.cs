@@ -36,6 +36,29 @@ namespace HellowWorld_UWP
             this.InitializeComponent();
             this.Suspending += OnSuspending;
 
+            // This should come before MobileCenter.Start() is called
+            Push.PushNotificationReceived += (sender, e) => {
+
+                // Add the notification message and title to the message
+                var summary = $"Push notification received:" +
+                                    $"\n\tNotification title: {e.Title}" +
+                                    $"\n\tMessage: {e.Message}";
+
+                // If there is custom data associated with the notification,
+                // print the entries
+                if (e.CustomData != null)
+                {
+                    summary += "\n\tCustom data:\n";
+                    foreach (var key in e.CustomData.Keys)
+                    {
+                        summary += $"\t\t{key} : {e.CustomData[key]}\n";
+                    }
+                }
+
+                // Send the notification summary to debug output
+                Debug.WriteLine(summary);
+            };
+
             MobileCenter.Start("15cb68c0-2a58-4ab2-a1c5-5dd390381c22", typeof(Analytics));
             MobileCenter.Start("15cb68c0-2a58-4ab2-a1c5-5dd390381c22", typeof(Push));
             MobileCenter.LogLevel = LogLevel.Verbose;

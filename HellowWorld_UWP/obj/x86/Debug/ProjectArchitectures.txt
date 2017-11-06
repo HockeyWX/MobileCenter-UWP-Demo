@@ -1,1 +1,1 @@
-E:\Pan\HockeyApp\VS2017\HellowWorld_UWP\HellowWorld_UWP\HellowWorld_UWP.csproj;x86
+D:\MobileCenter\HelloWorld_UWP\HelloWrold_UWP\HellowWorld_UWP\HellowWorld_UWP.csproj;x86

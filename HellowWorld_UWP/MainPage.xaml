@@ -13,9 +13,9 @@
                    Foreground="#FF1261A2" 
                    Height="60"
                    VerticalAlignment="Center"/>
-        <Button Content="CreateCrash" Click="Button_Click"/>
+        <Button Content="CreateCrash" Click="CreateCrash_Click"/>
 
-        <StackPanel Orientation="Horizontal">
+        <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
             <TextBlock Text="NotificationURI:  "/>
             <TextBlock Name="URITextBlock"/>
         </StackPanel>
@@ -23,6 +23,11 @@
         <StackPanel Orientation="Horizontal">
             <TextBlock Text="ApplicationStateIsSuspended:  "/>
             <TextBlock Name="ApplicationStateTB"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Margin="0,20,0,0">
+            <Button Content="CustomEvent" Click="CustomEvent_Click"/>
+            <Button Content="EventWithOnlyName" Click="EventWithOnlyName_Click"/>
         </StackPanel>
 
     </StackPanel>

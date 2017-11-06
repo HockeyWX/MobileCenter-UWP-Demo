@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Navigation;
 using Windows.Networking.PushNotifications;
 using System.Diagnostics;
 using Microsoft.Azure.Mobile.Utils;
+using Microsoft.Azure.Mobile.Analytics;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -29,18 +30,36 @@ namespace HellowWorld_UWP
         {
             this.InitializeComponent();
 
-            SetupSelfNotification();
-
-            GetApplicationState();
+            //SetupSelfNotification();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void CreateCrash_Click(object sender, RoutedEventArgs e)
         {
-
+            Debug.WriteLine("Fake Crash");
         }
 
+        //--------CustomEvent
+        private void CustomEvent_Click(object sender, RoutedEventArgs e)
+        {
+            Analytics.TrackEvent("Video clicked", new Dictionary<string, string> {
+                { "Category", "Music" },
+                { "FileName", "favorite.avi"}
+            });
+        }
+
+        private void EventWithOnlyName_Click(object sender, RoutedEventArgs e)
+        {
+            Analytics.TrackEvent("Video clicked");
+        }
+        //--------CustomEvent
+
+        
+
+        //---------Test more than one Notification Channle
         private async void SetupSelfNotification()
         {
+            GetApplicationState();
+
             PushNotificationChannel channel1 = await PushNotificationChannelManager.CreatePushNotificationChannelForApplicationAsync();
             this.URITextBlock.Text = channel1.Uri;
             Debug.WriteLine("channelURI" + channel1.Uri);
@@ -72,7 +91,5 @@ namespace HellowWorld_UWP
             this.ApplicationStateTB.Text = isSuspended.ToString();
 
         }
-
-
     }
 }
